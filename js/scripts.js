@@ -1,17 +1,25 @@
 $(document).ready(function() {
-  $("button#hello").click(function() {
-    $("ul#user").prepend("<li>Hello!</li>");
-    $("ul#webpage").prepend("<li>Why hello there!</li>")
-    $("ul#user").children("li").first().click(function() {
+  $("button#meow").click(function() {
+    $("ul#cat").prepend("<li>Meow!</li>");
+    $("ul#dog").prepend("<li>Screw you, Cat! Bark!</li>")
+    $("ul#cat").children("li").first().click(function() {
       $(this).remove();
     });
   });
 
-  $("button#goodbye").click(function() {
-    $("ul").prepend("<li>Goodbye!</li>");
+  $("button#purr").click(function() {
+    $("ul#cat").prepend("<li>Puuuuuurrrrrr</li>");
+    $("ul#dog").prepend("<li>I see you, Cat. Keep your distance. Woof.</li>")
+    $("ul#cat").children("li").first().click(function() {
+      $(this).remove();
+    });
   });
 
-  $("button#stop").click(function() {
-    $("ul").prepend("<li>Stop copying me!</li>");
+  $("button#hiss").click(function() {
+    $("ul#cat").prepend("<li>Hiiiissss!</li>");
+    $("ul#dog").prepend("<li>That's it, Cat. You going down. Snarl!</li>")
+    $("ul#cat").children("li").first().click(function() {
+      $(this).remove();
+    });
   });
 });
