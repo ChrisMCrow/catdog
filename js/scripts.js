@@ -2,8 +2,12 @@ $(document).ready(function() {
   $("button#meow").click(function() {
     $("ul#cat").prepend("<li>Meow!</li>");
     $("ul#dog").prepend("<li>Screw you, Cat! Bark!</li>")
+    $("h2").append("<img src='img/meowCat.jpeg'>");
     $("ul#cat").children("li").first().click(function() {
       $(this).remove();
+    });
+    $("button").click(function() {
+      $("h2").children("img").last().remove();
     });
   });
 
